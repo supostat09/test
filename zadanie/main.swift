@@ -1,11 +1,21 @@
-//
-//  main.swift
-//  zadanie
-//
-//  Created by Абдулла-Бек on 14/1/23.
-//
 
-import Foundation
+//1) С помощью циклов сделайте так, чтобы выходило сообщение введите имя: и создавал нам ридлайн 5 раз. Каждый раз когда мы нажимаем enter, программа должна здороваться с нами по имени. Например: "Привет, Бегимай"
 
-print("Hello, World!")
+for _ in 1...5 {
+    print("Введите имя")
+    let enterName = readLine()!
+    print("Привет \(enterName)!")
+}
+    
+//2)Создайте пустой массив типа String. В списке 14 студентов. Сделайте программу, так чтобы нам 14 раз просило ввести имя: Введите имя каждого студента по очереди и имя должно добавляться в массив. В конце запринтуйте ваш массив с именами. Там должны быть все имена.
 
+//"Aman, Imran, Atai, Alisa, Adilet, Abdulla, Ayaz, Aikunduz, Beksultan, Sonun, Elina, Begimai, Meerim, Alhasein"
+
+var students: [String] = []
+
+for _ in 0...13 {
+    print("Введите имя")
+    students.append(readLine()!)
+}
+
+print(students)
